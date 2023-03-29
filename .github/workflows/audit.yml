@@ -51,4 +51,5 @@ jobs:
           echo "No open issues with the same title found. Creating a new issue."          
           issue_title="[GENERATED ISSUE] yarn audit found security issues"
           issue_body="Yarn audit found security issues"
-          gh issue create --title "$issue_title" --body "$issue_body"
+          issue_labels="dependencies,security"
+          gh issue create --title "$issue_title" --body "$issue_body" --label "$issue_labels"
