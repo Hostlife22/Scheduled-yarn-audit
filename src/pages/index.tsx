@@ -17,9 +17,6 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <div className={styles.container}>
-          <h1 className={styles.title}>
-            Create <span className={styles.pinkSpan}>T3</span> App
-          </h1>
           <div className={styles.cardRow}>
             <Link
               className={styles.card}
