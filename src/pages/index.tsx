@@ -17,9 +17,6 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <div className={styles.container}>
-          <h1 className={styles.title}>
-            Create <span className={styles.pinkSpan}>T3</span> App
-          </h1>
           <div className={styles.cardRow}>
             <Link
               className={styles.card}
@@ -37,7 +34,6 @@ const Home: NextPage = () => {
               href="https://create.t3.gg/en/introduction"
               target="_blank"
             >
-              <h3 className={styles.cardTitle}>Documentation →</h3>
               <div className={styles.cardText}>
                 Learn more about Create T3 App, the libraries it uses, and how
                 to deploy it.
