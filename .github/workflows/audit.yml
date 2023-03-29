@@ -25,6 +25,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+          scope: "@dknmz"
 
       - name: Run yarn audit
         run: yarn audit
@@ -40,9 +41,9 @@ jobs:
         run: |
           count=$(gh search issues --state open "is:issue in:title [GENERATED ISSUE] yarn audit found security issues" | jq -r '.total_count')
           if [ "$count" -gt 0 ]; then
-            echo "::set-output name=has-open-issues::true"
+          echo "::set-output name=has-open-issues::true"
           else
-            echo "::set-output name=has-open-issues::false"
+          echo "::set-output name=has-open-issues::false"
           fi
       # https://cli.github.com/manual/gh_issue_create
       - name: Create issue
